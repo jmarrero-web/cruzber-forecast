@@ -805,7 +805,7 @@ REGLAS:
                     try:
                         client = OpenAI(api_key=api_key)
                         response = client.chat.completions.create(
-                            model="gpt-4o-mini",
+                            model="gpt-4.1-mini",
                             messages=[
                                 {"role": "system", "content": SYSTEM_PROMPT},
                                 *[{"role": m["role"], "content": m["content"]}
